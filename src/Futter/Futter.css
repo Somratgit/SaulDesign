@@ -1,0 +1,35 @@
+/* For Links Hover Effects */
+.ul1 li a {
+    position: relative;
+    padding-bottom: 5px;  /* To provide space for the underline */
+}
+
+.ul1 li a:hover {
+    color: #00ADB5;  /* Hover text color */
+}
+
+.ul1 li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;  /* Thickness of the underline */
+    background-color: #00ADB5;  /* Underline color */
+    transition: width 0.3s ease;  /* Smooth width transition */
+}
+
+.ul1 li a:hover::after {
+    width: 100%;  /* Underline width when hover */
+}
+
+/* For Social Media Icons Hover Effects */
+.ul2 li a:hover i {
+    background-color: #00ADB5;  /* Background color change */
+    color: white;  /* Icon color on hover */
+}
+
+/* Optional: For a smooth transition */
+.ul1 li a, .ul2 li a {
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
