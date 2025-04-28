@@ -1,24 +1,28 @@
-import React from 'react'
-import './Header.css'
-const navbar = () => {
-  return (
-    <>
- <navbar>  
-  <div className=" border-b-[1px] border-[#373c44]">
-    <div className="container nav flex justify-between py-[48px]   ">
-      <div>
-        <img src="images/navlogo.png" alt="logo" />
-      </div>
-      <ul className="flex gap-x-[48px] ">
-        <li className="list"><a href="#">Home</a></li>
-        <li className="list"><a href="#">Home</a></li>
-        <li className="list"><a href="#">Home</a></li>
-      </ul>
-    </div>
-  </div>
- </navbar>
-    </>
-  )
-}
+ import React from 'react';
+import './Header.css';
+import { Link } from 'react-router';
 
-export default navbar
+const Navbar = () => {
+  return (
+    <nav>
+      <div className="border-b-[1px] border-[#373c44]">
+        <div className="container ">
+         <div className='nav flex justify-between py-[48px]'>
+         <div>
+          <img src="images/navlogo.png" alt="logo" />
+          </div>
+          <ul className="flex gap-x-[48px]">
+          <li className="list"><Link Link to="/home"  >Home</Link></li>
+          <li className="list"><Link Link to="/Abouting"  >About Me</Link></li>
+          <li className="list"><Link Link to="/RecentWorks"  >Recent Works</Link></li>
+          <li className="list"><Link Link to="/Contact"  >Contact</Link></li>
+          </ul>
+         </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+ 
