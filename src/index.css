@@ -20,11 +20,7 @@
      .list{
     @apply text-[#EEEEEE] font-normal hover:text-blue-500  text-[18px]
   }
-<<<<<<< HEAD
-    .btn1 a{
-=======
     .btn1 {
->>>>>>> 29b977ab13cc05becf8dbbe542e04fa1a9a8c616
         padding: 10px 32px;
         border-radius: 24px;
         background-color: var(--color-btn);
@@ -34,16 +30,6 @@
         text-shadow:0 2px 2px rgba(0, 0, 0, 0.5);
         @apply hover:bg-[#00ADB5]  duration-300;  
     }
-<<<<<<< HEAD
-    /* Active button style */
-      .active-btn a{
-        background-color: #00adb5;  /* Active button color */
-        color: white;  /* Active button text color */
-        border: 1px solid #00adb5;
-      }
-
-=======
->>>>>>> 29b977ab13cc05becf8dbbe542e04fa1a9a8c616
     .pera{
       @apply text-[rgb(238,238,238,75%)] font-normal text-[18px] font-light
     }
