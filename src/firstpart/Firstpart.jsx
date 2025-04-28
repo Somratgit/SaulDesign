@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const FirstPart = () => {
-  const [activeBtn, setActiveBtn] = useState(1); 
+  const [activeBtn, setActiveBtn] = useState(1);
   return (
     <>
       <div className="container">
@@ -42,11 +42,7 @@ const FirstPart = () => {
 
           <div className="pt-[260px] w-2/4">
             <div className="img">
-              <img
-                className="ml-auto"
-                src="/images/doodles mixed round.png"
-                alt="images"
-              />
+              <img className="ml-auto" src="/images/doodles mixed round.png" alt="images" />
             </div>
           </div>
         </div>
@@ -56,4 +52,3 @@ const FirstPart = () => {
 };
 
 export default FirstPart;
-
